@@ -1,0 +1,170 @@
+/* ===================== */
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===================== */
+/* Encabezado */
+header {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #111;
+  border-bottom: 2px solid rgb(0, 71, 171);
+  box-shadow: 0 0 12px rgba(17, 0, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Contenedor del contenido del header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Logo + título */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Botón de Cerrar sesión */
+.logout-button {
+  background-color: rgb(0, 71, 171);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: rgb(0, 71, 171);
+  box-shadow: 0 0 10px rgb(0, 71, 171);
+}
+
+/* ===================== */
+/* Contenedor del formulario */
+#loginFormEmprendedor {
+  background-color: #111;
+  border: 1px solid rgb(0, 71, 171);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-top: 120px; /* espacio debajo del header */
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 0 18px rgba(0, 4, 255, 0.7);
+  text-align: center;
+}
+
+/* Título del formulario */
+#loginFormEmprendedor h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  border-bottom: 2px solid rgb(0, 71, 171);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+/* Campos de entrada */
+input {
+  width: 100%;
+  padding: 10px;
+  background: #1a1a1a;
+  border: 1px solid rgb(0, 71, 171);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5f33ff;
+  box-shadow: 0 0 6px rgba(0, 4, 255, 0.7);
+}
+
+/* Mensaje de error */
+.error {
+  color: #4d68ff;
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* Botón del formulario */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: rgb(0, 71, 171);
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: darkrgb(0, 71, 171);
+  transform: translateY(-2px);
+}
+
+/* ===================== */
+/* Enlaces */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #4da6ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #80c1ff;
+}

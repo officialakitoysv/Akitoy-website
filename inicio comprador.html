@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Emprendedor</title>
+  <link rel="stylesheet" href="inicio de sesion compradoor.css"> <!-- mismo CSS que el registro -->
+</head>
+<body>
+
+  <!-- Encabezado con logo y título -->
+ <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="logo toy.jpg" alt="Logo AKITOY">
+        <h1>Bienvenido de nuevo a AKITOY</h1>
+      </div>
+      <a href="index.html" class="logout-button">Cerrar sesión</a>
+    </div>
+  </header>
+
+  <!-- Formulario de inicio de sesión -->
+  <div id="loginFormEmprendedor">
+    <h2>Iniciar sesión</h2>
+    <form id="formLoginEmprendedor">
+      
+      <label for="correoLogin">Correo electrónico:</label>
+      <input type="email" id="correoLogin" name="correoLogin" required>
+
+      <label for="contrasenaLogin">Contraseña:</label>
+      <input type="password" id="contrasenaLogin" name="contrasenaLogin" required>
+
+      <div id="loginEmpError" class="error"></div>
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p>¿No tienes cuenta? <a href="registro comprador.html">Regístrate aquí</a></p>
+  </div>
+
+  <script>
+    // Maneja el envío del formulario sin error 405
+    document.getElementById("formLoginEmprendedor").addEventListener("submit", function (event) {
+      event.preventDefault(); // evita envío al servidor (GitHub Pages no lo soporta)
+
+      const email = document.getElementById("correoLogin").value.trim();
+      const pass = document.getElementById("contrasenaLogin").value.trim();
+      const errorBox = document.getElementById("loginEmpError");
+
+      if (email === "" || pass === "") {
+        errorBox.textContent = "Por favor, completa todos los campos.";
+        return;
+      }
+
+      // Si los campos están llenos, redirige al menú
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>

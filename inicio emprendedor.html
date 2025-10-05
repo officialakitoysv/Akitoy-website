@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Emprendedor</title>
+  <link rel="stylesheet" href="iniciodesesion emprendedoor.css"> <!-- mismo CSS que el registro -->
+</head>
+<body>
+
+  <!-- Encabezado con logo y título -->
+ <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="logo toy.jpg" alt="Logo AKITOY">
+        <h1>Bienvenido de nuevo a AKITOY</h1>
+      </div>
+      <a href="index.html" class="logout-button">Cerrar sesión</a>
+    </div>
+  </header>
+
+  <!-- Formulario de inicio de sesión -->
+  <div id="loginFormEmprendedor">
+    <h2>Iniciar sesión</h2>
+    <form id="formLoginEmprendedor" action="index.html" method="post">
+      
+      <label for="correoLogin">Correo electrónico:</label>
+      <input type="email" id="correoLogin" requiblue />
+
+      <label for="contrasenaLogin">Contraseña:</label>
+      <input type="password" id="contrasenaLogin" requiblue />
+
+      <div id="loginEmpError" class="error"></div>
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p>¿No tienes cuenta? <a href="registro emprendedor.html">Regístrate aquí</a></p>
+  </div>
+
+</body>
+</html>

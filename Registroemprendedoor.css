@@ -1,0 +1,191 @@
+/* ===================== */
+/* Fondo general */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===================== */
+/* Encabezado */
+header {
+  width: 100%;
+  background-color: #111;
+  border-bottom: 2px solid rgb(0, 71, 171);
+  box-shadow: 0 0 15px rgb(0, 71, 171);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Contenedor interno del header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Logo + título alineados */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title img {
+  width: 70px;
+  height: 70px;
+  margin-right: 12px;
+}
+
+.logo-title h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+/* Botón Cerrar sesión */
+.logout-button {
+  background-color: rgb(0, 71, 171);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover,
+.logout-button:focus {
+  background-color: white;
+  color: rgb(0, 71, 171);
+  box-shadow: 0 0 10px rgb(0, 71, 171);
+}
+
+/* ===================== */
+/* Contenedor del formulario */
+#registerFormEmprendedor {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 140px; /* espacio para el header */
+  padding: 30px 25px;
+  border: 2px solid rgb(12, 66, 141);
+  border-radius: 12px;
+  background-color: #111;
+  box-shadow: 0 0 25px rgb(12, 66, 141);
+  box-sizing: border-box;
+}
+
+/* Título del formulario */
+#registerFormEmprendedor h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgb(0, 71, 171);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Campos del formulario */
+form label {
+  display: block;
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: #000;
+  border: 1px solid rgb(0, 71, 171);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+form input[type="file"] {
+  padding: 5px;
+}
+
+/* Efectos al enfocar */
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4133ff;
+  box-shadow: 0 0 8px rgb(12, 66, 141);
+}
+
+/* Botón de envío */
+form button {
+  width: 100%;
+  margin-top: 25px;
+  background: rgb(0, 71, 171);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+}
+
+form button:hover {
+  background: darkrgb(0, 71, 171);
+  transform: translateY(-2px);
+}
+
+/* Mensaje de error */
+.error {
+  color: rgb(0, 71, 171);
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ===================== */
+/* Responsive */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logout-button {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  #registerFormEmprendedor {
+    margin: 100px 20px 20px;
+    padding: 20px;
+  }
+}

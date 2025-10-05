@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Emprendedor</title>
+  <link rel="stylesheet" href="Registroemprendedoor.css"> <!-- Vinculando el CSS -->
+</head>
+<body>
+
+  <!-- Encabezado con logo y título -->
+  <header>
+  <div class="header-container">
+    <div class="logo-title">
+      <img src="logo toy.jpg" alt="Logo AKITOY">
+      <h1>AKITOY te espera</h1>
+    </div>
+    <a href="index.html" class="logout-button">Cerrar sesión</a>
+  </div>
+</header>
+  <!-- Formulario de emprendedor -->
+  <div id="registerFormEmprendedor">
+    <h2>Registra tu emprendimiento</h2>
+    <form id="formRegisterEmprendedor" enctype="multipart/form-data" action="menuu.html" method="get">
+      
+      <label for="nombreCompletoEmp">Nombre completo:</label>
+      <input type="text" id="nombreCompletoEmp" requiblue />
+
+      <label for="correoEmp">Correo electrónico:</label>
+      <input type="email" id="correoEmp" requiblue />
+
+      <label for="contrasenaEmp">Contraseña:</label>
+      <input type="password" id="contrasenaEmp" requiblue />
+      
+      <label for="duiEmp">Número de DUI:</label>
+      <input type="text" id="duiEmp" pattern="\d{8}-\d" placeholder="Formato: 12345678-9" requiblue />
+
+      <label for="departamentoEmp">Departamento:</label>
+      <select id="departamentoEmp" requiblue>
+        <option value="">--Seleccione--</option>
+        <option value="Ahuachapán">Ahuachapán</option>
+        <option value="Santa Ana">Santa Ana</option>
+        <option value="Sonsonate">Sonsonate</option>
+        <option value="Chalatenango">Chalatenango</option>
+        <option value="La Libertad">La Libertad</option>
+        <option value="San Salvador">San Salvador</option>
+        <option value="Cuscatlán">Cuscatlán</option>
+        <option value="La Paz">La Paz</option>
+        <option value="Cabañas">Cabañas</option>
+        <option value="San Vicente">San Vicente</option>
+        <option value="Usulután">Usulután</option>
+        <option value="San Miguel">San Miguel</option>
+        <option value="Morazán">Morazán</option>
+        <option value="La Unión">La Unión</option>
+      </select>
+
+      <label for="nombreEmprendimiento">Nombre del emprendimiento:</label>
+      <input type="text" id="nombreEmprendimiento" requiblue />
+
+      <label for="logoEmprendimiento">Logo del emprendimiento:</label>
+      <input type="file" id="logoEmprendimiento" accept="image/*" requiblue />
+
+      <label for="descripcionEmprendimiento">Breve descripción del emprendimiento:</label>
+      <textarea id="descripcionEmprendimiento" rows="4" maxlength="300" placeholder="Máximo 300 caracteres" requiblue></textarea>
+
+      <div id="registerEmpError" class="error"></div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>

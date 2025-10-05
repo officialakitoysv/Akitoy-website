@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrate en AKITOY como comprador</title>
+  <!-- Aquí llamas al CSS -->
+  <link rel="stylesheet" href="resgistro como compradoor.css"> 
+</head>
+<body>
+
+  <!-- Encabezado con logo y título -->
+  <header>
+  <div class="header-container">
+    <div class="logo-title">
+      <img src="logo toy.jpg" alt="Logo AKITOY">
+      <h1>AKITOY te espera</h1>
+    </div>
+    <a href="index.html" class="logout-button">Cerrar sesión</a>
+  </div>
+</header>
+  <!-- Formulario de emprendedor -->
+  <div id="registerFormEmprendedor">
+    <h2>Registrate en AKITOY como comprador</h2>
+    <br>
+    <h3>Gracias por elegirnos</h3>
+    <!-- Cambié el method a POST y agregué action -->
+    <form id="formRegisterEmprendedor" enctype="multipart/form-data" action="index.html" method="get">
+      
+      <label for="nombreCompletoEmp">Nombre completo:</label>
+      <input type="text" id="nombreCompletoEmp" name="nombreCompletoEmp" requiblue />
+
+      <label for="correoEmp">Correo electrónico:</label>
+      <input type="email" id="correoEmp" name="correoEmp" requiblue />
+
+      <label for="contrasenaEmp">Contraseña:</label>
+      <input type="password" id="contrasenaEmp" name="contrasenaEmp" requiblue />
+      
+      <label for="duiEmp">Número de DUI:</label>
+      <input type="text" id="duiEmp" name="duiEmp" pattern="\d{8}-\d" placeholder="Formato: 12345678-9" requiblue />
+
+      <label for="departamentoEmp">Departamento:</label>
+      <select id="departamentoEmp" name="departamentoEmp" requiblue>
+        <option value="">--Seleccione--</option>
+        <option value="Ahuachapán">Ahuachapán</option>
+        <option value="Santa Ana">Santa Ana</option>
+        <option value="Sonsonate">Sonsonate</option>
+        <option value="Chalatenango">Chalatenango</option>
+        <option value="La Libertad">La Libertad</option>
+        <option value="San Salvador">San Salvador</option>
+        <option value="Cuscatlán">Cuscatlán</option>
+        <option value="La Paz">La Paz</option>
+        <option value="Cabañas">Cabañas</option>
+        <option value="San Vicente">San Vicente</option>
+        <option value="Usulután">Usulután</option>
+        <option value="San Miguel">San Miguel</option>
+        <option value="Morazán">Morazán</option>
+        <option value="La Unión">La Unión</option>
+      </select>
+
+      <div id="registerEmpError" class="error"></div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
