@@ -1,13 +1,13 @@
 /* Fuente principal */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #111;
+    background-color: #fffdfd;
     color: white;
 } 
 
 /* Navbar personalizado */
 .custom-navbar {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgb(0, 71, 171);
     padding: 12px 0;
     border-bottom: 2px solid rgb(0, 71, 171);
     transition: background 0.3s ease;
@@ -48,7 +48,7 @@ body {
 /* HERO SECTION */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(to bottom, #000, #111);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     padding: 0 15px;
 }
 
@@ -60,11 +60,12 @@ body {
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
+    color:rgb(0, 71, 171);
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: rgb(0, 71, 171);
 }
 
 /* Secciones */
@@ -76,22 +77,22 @@ body {
 
 /* Footer */
 .footer {
-    background: #000;
+    background: rgb(0, 71, 171);
     padding: 15px 0;
     border-top: 2px solid rgb(0, 71, 171);
     font-size: 0.9rem;
-    color: #bbb;
+    color: #ffffff;
 }
 
 #sobre-nosotros p {
-    color: #9e9898 !important;
+    color: #383737 !important;
 }
 
 /* Secciones de texto (Sobre nosotros, Misión, Visión) */
 .info-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #111; /* Fondo negro */
+    background-color: #fff8f8; /* Fondo negro */
     border: 2px solid rgb(0, 71, 171); /* Borde rojo */
     border-radius: 20px; /* Esquinas rgb(0, 71, 171)ondeadas */
     box-shadow: 0 0 15px rgb(0, 71, 171); /* Brillo alrgb(0, 71, 171)edor */
@@ -106,10 +107,9 @@ body {
 }
 
 .info-section p {
-    color: #9e9898 !important;
+    color: #383737 !important;
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
 }
-
